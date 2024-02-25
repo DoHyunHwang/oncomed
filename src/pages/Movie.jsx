@@ -25,8 +25,6 @@ export default function Movie() {
     queryFn: () => getDetailMovie().then((res) => res.data),
   });
 
-  console.log("체크: ", data);
-
   if (!data) {
     return <div>Loading ...</div>;
   }

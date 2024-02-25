@@ -6,8 +6,6 @@ import { Rating } from "@mui/material";
 export default function MovieItem(props) {
   const navigate = useNavigate();
 
-  console.log("props: ", props);
-
   // 장르 ID에 해당하는 장르 이름을 찾아 문자열로 반환하는 함수
   const getGenreNames = () => {
     if (!props.genres) return ""; // genres가 없으면 빈 문자열 반환
